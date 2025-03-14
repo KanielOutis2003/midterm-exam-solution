@@ -5,10 +5,10 @@ const sequelize = require('./db');
 const app = express();
 const port = 3000;
 
-// Middleware to parse JSON requests
+
 app.use(express.json());
 
-// Route to fetch all users
+
 app.get('/users', async (req, res) => {
   try {
     const users = await User.findAll();
@@ -18,7 +18,7 @@ app.get('/users', async (req, res) => {
   }
 });
 
-// Start the server
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
