@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management CRUD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Management</h1>
+        
+        
+        <div class="form-container">
+            <input type="text" id="Assignment" placeholder="Assignment" />
+            <input type="text" id="Please Submit your assignment before deadline" placeholder="Please Submit your assignment before deadline" />
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div class="form-container">
+            <input type="text" id="Quiz" placeholder="Quiz" />
+            <input type="text" id="Should Attempt Quiz" placeholder="Should Attempt Quiz" />
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div class="form-container">
+            <input type="text" id="HomeWork" placeholder="HomeWork" />
+            <input type="text" id="Pass it tommorow" placeholder="Pass it tommorow" />
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        
+        
+        <h2>Task List</h2>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
